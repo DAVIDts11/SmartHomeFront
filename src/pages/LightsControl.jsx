@@ -96,7 +96,7 @@ export default function LightsControl() {
                         onChange={onChengeLevel}
                         onMouseLeave={setLightsLevel}
                         min={150}
-                        max={550}
+                        max={600}
                         step={1}
                         value={lightLevel}
                         className='custom-slider'>

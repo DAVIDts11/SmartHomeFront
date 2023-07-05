@@ -22,9 +22,10 @@ export default function Parking() {
     }
 
     function parkingUp() {
-        console.log(gateParkingUrl);
+        const url = gateParkingUrl + "/27/on"
+        console.log(url);
         axios
-        .get(gateParkingUrl + "/27/off")
+        .get(url)
         .then((response) => {
             console.log("response",response);
         })
@@ -32,8 +33,10 @@ export default function Parking() {
     }
 
     function parkingDown() {
+        const url = gateParkingUrl + "/27/off"
+        console.log(url);
         axios
-        .get(gateParkingUrl + "/27/off")
+        .get(url)
         .then((response) => {
             console.log("response",response);
         })
